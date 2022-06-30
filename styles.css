@@ -52,12 +52,13 @@ label{
     background-color: var(--dark-brown);
     padding: 0.25rem;
     opacity: 0;
+    text-align: center;
     transition: opacity 0.3s ease-in-out;
 }
 .charts{
     display: flex;
     justify-content: space-around;
-    height: 300px;
+    height: 400px;
     align-items: flex-end;
     margin-bottom: 2rem;
 }
@@ -74,10 +75,8 @@ label{
 }
 .chart{
     background-color: var(--cyan);
-    height: 0;
     width: 30px;
     border-radius: 5px;
-    transition: height 0.3s ease-in-out;
 }
 .day{
     font-size: 14px;
