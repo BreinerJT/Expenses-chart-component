@@ -1,0 +1,134 @@
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    font-size: 18px;
+}
+section{
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.balance-section{
+    background-color: var(--soft-red);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 2rem 0;
+}
+.info h2, .info p{
+    margin: 0;
+}
+.info p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.charts-section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    display: grid;
+    justify-content: center;
+}
+.charts-section h2{
+    color: var(--dark-brown);
+    padding-left: 1rem;
+}
+label{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0.25rem;
+    border-radius: 10px;
+    background-color: var(--dark-brown);
+    padding: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.charts{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+.chart-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.chart-container:hover label{
+    opacity: 1;
+}
+.chart-container:hover .chart{
+    filter: brightness(1.25);
+}
+.chart{
+    background-color: var(--cyan);
+    height: 0;
+    width: 30px;
+    border-radius: 5px;
+    transition: height 0.3s ease-in-out;
+}
+.day{
+    font-size: 14px;
+    width: 30px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+    text-align: center;
+}
+.current-day{
+    background-color: var(--soft-red);
+}
+.underline{
+    padding: 0 1rem;
+    width: 90%;
+    height: 5px;
+    background-color: var(--cream);
+    margin: 0 auto;
+}
+.expenses{
+    padding: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expenses p{
+    color: var(--medium-brown);
+    font-size: 16px;
+    margin: 0;
+}
+.expenses h1{
+    margin: 0;
+}
+strong{
+    padding-left: 4.25rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 400px) {
+    .charts-section{
+        justify-content: normal;
+    }
+}
+@media screen and (min-width: 500px) {
+    .charts-section{
+        justify-content: normal;
+    }
+    .charts{
+        padding-left: 0.25rem;
+    }
+    .chart{
+        width: 50px;
+    }
+}

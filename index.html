@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Expenses chart component</title>
+
+</head>
+<body>
+
+  <main>
+
+    <section>
+
+      <div class="balance-section">
+        <div class="info">
+          <p>
+            My balance
+          </p>
+          <h2>
+            $921.48
+          </h2>
+        </div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <div class="charts-section">
+        <h2>
+          Spending - Last 7 days
+        </h2>
+        
+        <div class="charts">
+          <div class="chart-container">
+            <p class="day" data-id="mon">mon</p>
+            <div class="js-chart chart" id="mon"></div>
+            <label class="js-label" for="mon"></label>
+          </div>
+          <div class="chart-container">
+            <p class="day" data-id="tue">tue</p>
+            <div class="js-chart chart" id="tue"></div>
+            <label class="js-label" for="tue"></label>
+          </div>
+          <div class="chart-container">
+            <p class="day" data-id="wed">wed</p>
+            <div class="js-chart chart" id="wed"></div>
+          <label class="js-label" for="wed"></label>
+          </div>
+          <div class="chart-container">
+            <p class="day" data-id="thu">thu</p>
+            <div class="js-chart chart" id="thu"></div>
+          <label class="js-label" for="thu"></label>
+          </div>
+          <div class="chart-container">
+          <p class="day" data-id="fri">fri</p>
+            <div class="js-chart chart" id="fri"></div>
+          <label class="js-label" for="fri"></label>
+          </div>
+          <div class="chart-container">
+          <p class="day" data-id="sat">sat</p>
+            <div class="js-chart chart" id="sat"></div>
+          <label class="js-label" for="sat"></label>
+          </div>
+          <div class="chart-container">
+          <p class="day" data-id="sun">sun</p>
+            <div class="js-chart chart" id="sun"></div>
+          <label class="js-label" for="sun"></label>
+          </div>
+        </div>
+
+        <div class="underline"></div>
+        <div class="expenses">
+          <div class="months">
+            <p>
+              Total this month
+            </p>
+            <h1>
+              $478.33
+            </h1>
+          </div>
+          <div class="prev-month">
+              <strong>
+                +2.4%
+              </strong>
+              <p>
+                from last month
+              </p>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
